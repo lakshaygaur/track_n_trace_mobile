@@ -46,40 +46,32 @@ export default function HomeScreen() {
         alignItems: 'stretch',}}>
         <View style={styles.progressLink} />
         </View>
+        {/* ---- Next card image --- */}
 
-        <View style={styles.getStartedContainer}>
-          <DevelopmentModeNotice />
-
-          <Text style={styles.getStartedText}>Get started by opening</Text>
-
-          <View
-            style={[styles.codeHighlightContainer, styles.homeScreenFilename]}>
-            <MonoText>screens/HomeScreen.js</MonoText>
-          </View>
-
-          <Text style={styles.getStartedText}>
-            GARVITA BABY IS SUCH A CUTIE
-          </Text>
+        <View style={styles.welcomeContainer}>
+          <Image
+            source={
+              require('../assets/images/customer.png')              
+            }
+            style={styles.nextImage }
+          />
         </View>
+        {/* <View style={{flex: 1, flexDirection: 'row', justifyContent: 'center',
+        alignItems: 'stretch',}}>
+        <View style={styles.progressLink} />
+        </View> */}
 
-        <View style={styles.helpContainer}>
-          <TouchableOpacity onPress={handleHelpPress} style={styles.helpLink}>
-            <Text style={styles.helpLinkText}>
-            Touchable Opacity
-            </Text>
-          </TouchableOpacity>
-        </View>
       </ScrollView>
 
       <View style={styles.tabBarInfoContainer}>
         <Text style={styles.tabBarInfoText}>
-       Text above Mono 
+       Asset ID 
         </Text>
 
         <View
           style={[styles.codeHighlightContainer, styles.navigationFilename]}>
           <MonoText style={styles.codeHighlightText}>
-          Mono Text
+          mJrZBxOoEX77Ezv9zwW7WV8DdluouRKNY
           </MonoText>
         </View>
       </View>
@@ -164,7 +156,7 @@ const styles = StyleSheet.create({
     borderColor: 'powderblue',
     backgroundColor:'powderblue',
     borderRadius: 50,
-    borderWidth: 5
+    borderWidth: 5,
   },
   getStartedContainer: {
     alignItems: 'center',
